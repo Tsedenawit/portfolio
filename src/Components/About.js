@@ -13,7 +13,7 @@ export default function About(){
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
             </h4>
         </div> 
-        <div className="float-end  ">
+        <div className=" ">
                 <img src="../images/pin.jpg" className="w-fit h-[500px] md: w-[50%] " />
                 
             </div>

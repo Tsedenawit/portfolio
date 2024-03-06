@@ -6,7 +6,7 @@ export default function Navbar(){
     {name: "Home" , nav: "#"},
     {name: "About" , nav: "#about"},
     {name: "Process" , nav: "#pro"},
-    {name: "Portfolio" , nav: "#"},
+    {name: "Portfolio" , nav: "#port"},
     {name: "Contact me", nav:"#"}
  ] 
 //  const [open, setOpen] = useState(false);

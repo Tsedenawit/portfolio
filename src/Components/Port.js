@@ -1,13 +1,22 @@
-import React from "react";
+import React from 'react';
 
-export default function Port(){
-    return(
-        <div id="pro" >
-            <div className="bg-white p-8 rounded-lg drop-shadow-lg row-span-4 col-span-1">
-            <h2 className="text-2xl font-bold mb-4">Card Title</h2>
-            <p className="text-gray-600">This is a simple card with box shadow.</p>
-            </div>
-        </div>
-    )
-    
-}
+const Port = ({ image, title, description, ctaText, ctaLink }) => {
+  return (
+    <div className="rounded-lg bg-white drop-shadow-lg">
+      {image && (
+        <img className="w-[20%] h-48 object-cover" src={image} alt={title} />
+      )}
+      <div className="p-4">
+        <h2 className="text-xl font-bold">{title}</h2>
+        <p className="text-gray-700 mt-2">{description}</p>
+        {ctaLink && (
+          <a href={ctaLink} className="text-blue-500 hover:text-blue-700 underline mt-4 inline-block">
+            {ctaText}
+          </a>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Port;

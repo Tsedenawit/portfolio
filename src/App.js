@@ -10,15 +10,7 @@ function App() {
      <Navbar/>
      <About/>
      <Process/>
-     <div className="container mx-auto">
-      <Port
-        image="https://picsum.photos/id/237/200/300"
-        title="Card Title"
-        description="This is a description of the card content."
-        ctaText="Learn More"
-        ctaLink="https://www.example.com"
-      />
-    </div>
+      <Port/>
     </div>
   );
 }

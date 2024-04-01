@@ -1,22 +1,44 @@
 import React from 'react';
 
-const Port = ({ image, title, description, ctaText, ctaLink }) => {
-  return (
-    <div className="rounded-lg bg-white drop-shadow-lg">
-      {image && (
-        <img className="w-[20%] h-48 object-cover" src={image} alt={title} />
-      )}
-      <div className="p-4">
-        <h2 className="text-xl font-bold">{title}</h2>
-        <p className="text-gray-700 mt-2">{description}</p>
-        {ctaLink && (
-          <a href={ctaLink} className="text-blue-500 hover:text-blue-700 underline mt-4 inline-block">
-            {ctaText}
-          </a>
-        )}
+export default function Port(){
+  return(
+    <div >
+      <h1 className='text-center mb-10 text-5xl'><b>Projects</b></h1>
+      <div className='flex justify-between ml-20 mr-20'>
+    <div className='size-1/5 bg-white p-8 rounded-lg drop-shadow-lg'>
+      <div>
+      <img className='mb-5' src='../images/project.jpg'>
+      </img>
       </div>
+      <h2 className='mb-5 text-center text-xl'> <b>Project tittle</b></h2>
+      <p className='text-center'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consect
+      </p>
     </div>
-  );
-};
-
-export default Port;
+    <div className='size-1/5 bg-white p-8 rounded-lg drop-shadow-lg'>
+      <div>
+      <img className='mb-5 w-full' src='../images/project.jpg'>
+      </img>
+      </div>
+      <h2 className='mb-5 text-center text-xl'> <b>Project tittle</b></h2>
+      <p className='text-center'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consect
+      </p>
+    </div>
+    <div className='size-1/5 bg-white p-8 rounded-lg drop-shadow-lg'>
+      <div>
+      <img className='mb-5' src='../images/project.jpg'>
+      </img>
+      </div>
+      <h2 className='mb-5 text-center text-xl'> <b>Project tittle</b></h2>
+      <p className='text-center'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consect
+      </p>
+    </div>
+    </div>
+    </div>
+  )
+}

@@ -38,6 +38,17 @@ export default function Port(){
       Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consect
       </p>
     </div>
+    <div className='size-1/5 bg-white p-8 rounded-lg drop-shadow-lg'>
+      <div>
+      <img className='mb-5' src='../images/project.jpg'>
+      </img>
+      </div>
+      <h2 className='mb-5 text-center text-xl'> <b>Project tittle</b></h2>
+      <p className='text-center'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Suspendisse varius enim in eros.Lorem ipsum dolor sit amet, consect
+      </p>
+    </div>
     </div>
     </div>
   )

@@ -9,9 +9,13 @@ export default function Contact(){
     area:"",
    })
 
-   function handle(){
-  
+   function handle(event){
+    const {value , name } = event.target
+    setData({...data,
+      [name]:value
+    })
    }
+   console.log(data.fullname, data.email , data.service, data.area );
 
     return(
         <div className="grid place-items-center">
@@ -23,18 +27,21 @@ export default function Contact(){
               <input type="text" placeholder="Name" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
               value={data.fullname}
               id="names"
-              />
+              onChange={handle}
+              name="fullname"/>
             </div>
             <div>
               <label for="emails" className="text-sm">Your Email</label>
               <input type="email" placeholder="Email" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
               value={data.checked}
               id="emails"
-              />
+              onChange={handle}
+              name="email"/>
             </div>
             <div>
               <label for="selected" className="text-sm">Service Required</label><br></br>
-              <select id="selected" value={data.service} name="service" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300" >
+              <select id="selected" value={data.service} onChange={handle} 
+              name="service" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300" >
               <option value="">Select</option>
               <option value="Front-end">Front-end Development</option>
               <option value="UI/UX">UI/UX Design</option>
@@ -44,7 +51,7 @@ export default function Contact(){
             <div>
               <label for="" className="text-sm">Your Message</label>
               <textarea type="email" placeholder="Message" rows="4" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
-              value={data.area}
+              value={data.area} onChange={handle} name="area"
               ></textarea>
             </div>
             <button className="inline-block self-end bg-blue-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>

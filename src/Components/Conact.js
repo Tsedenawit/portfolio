@@ -15,7 +15,10 @@ export default function Contact(){
       [name]:value
     })
    }
-   console.log(data.fullname, data.email , data.service, data.area );
+   
+   function submit(){
+    
+   }
 
     return(
         <div className="grid place-items-center">
@@ -54,7 +57,8 @@ export default function Contact(){
               value={data.area} onChange={handle} name="area"
               ></textarea>
             </div>
-            <button className="inline-block self-end bg-blue-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>
+            <button type="submit"
+            className="inline-block self-end bg-blue-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>
           </form>
         </div>
       </div>

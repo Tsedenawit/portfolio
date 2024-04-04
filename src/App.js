@@ -12,7 +12,21 @@ function App() {
      <Navbar/>
      <About/>
      <Process/>
-      <Port/>
+      <Port 
+      img="../images/project.jpg" 
+      name="Bus ticket reservation" 
+      par="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan enim a consectetur 
+      aliquam. Proin at ligula sed dolor pellentesque malesuada." />
+      <Port 
+      img="../images/project.jpg" 
+      name="Bus ticket reservation" 
+      par="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan enim a consectetur 
+      aliquam. Proin at ligula sed dolor pellentesque malesuada." />
+      <Port 
+      img="../images/project.jpg" 
+      name="Bus ticket reservation" 
+      par="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan enim a consectetur 
+      aliquam. Proin at ligula sed dolor pellentesque malesuada." />
       <Service/>
       <br></br>
       <br></br>

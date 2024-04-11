@@ -12,6 +12,7 @@ function App() {
      <Navbar/>
      <About/>
      <Process/>
+     <div className='flex'>
       <Port 
       img="../images/project.jpg" 
       name="Bus ticket reservation" 
@@ -27,6 +28,7 @@ function App() {
       name="Bus ticket reservation" 
       par="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan enim a consectetur 
       aliquam. Proin at ligula sed dolor pellentesque malesuada." />
+      </div>
       <Service/>
       <br></br>
       <br></br>

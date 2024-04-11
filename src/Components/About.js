@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 
 export default function About(){
     return(
@@ -17,6 +17,17 @@ export default function About(){
                 <img src="../images/pin.jpg" className="w-fit h-[500px] md: w-[50%] " />
                 
             </div>
+            <motion.div
+  animate={{
+    x: 0,
+    backgroundColor: "#000",
+    boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)",
+    position: "fixed",
+    transitionEnd: {
+      display: "none",
+    },
+  }}
+/>
         </div>
     )
 }

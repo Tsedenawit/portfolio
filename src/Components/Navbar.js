@@ -12,7 +12,7 @@ export default function Navbar(){
 //  const [open, setOpen] = useState(false);
     return(
         <div className="shadow-md w-full fixed top-0 left-0 z-10 h-[10%] absolute mb-20">
-           <div className="flex"><img src="../images/logo.png" className="w-[8%] h-[8%] md:w-[15%] md:h-[15%] " alt="not found"/>
+           <div className="flex">
             <ul className="flex justify-between m-auto w-[60%]  ">
             {Pages.map((data)=>
     (

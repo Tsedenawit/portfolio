@@ -12,23 +12,12 @@ function App() {
      <Navbar/>
      <About/>
      <Process/>
-     <div className='flex'>
-      <Port 
-      img="../images/project.jpg" 
-      name="Bus ticket reservation" 
-      par="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan enim a consectetur 
-      aliquam. Proin at ligula sed dolor pellentesque malesuada." />
-      <Port 
-      img="../images/project.jpg" 
-      name="Bus ticket reservation" 
-      par="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan enim a consectetur 
-      aliquam. Proin at ligula sed dolor pellentesque malesuada." />
-      <Port 
-      img="../images/project.jpg" 
-      name="Bus ticket reservation" 
-      par="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan enim a consectetur 
-      aliquam. Proin at ligula sed dolor pellentesque malesuada." />
+     <div className=''>
+      <Port  />
       </div>
+      <br></br>
+      <br></br><br></br>
+      <br></br>
       <Service/>
       <br></br>
       <br></br>

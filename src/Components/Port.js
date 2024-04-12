@@ -22,8 +22,7 @@ export default function Port(props){
       {part.par}
       </p>
     </div>
-    </div>
-        
+    </div>   
       })}
       
   
